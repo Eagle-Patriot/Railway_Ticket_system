@@ -1,4 +1,4 @@
-<img width="765" alt="Screenshot 2023-08-20 at 2 04 36 AM" src="https://github.com/Eagle-Patriot/Railway_Ticket_system/assets/114234688/95076fc5-003c-4721-974f-b8d5a3ef645f"># Railway_Ticket_system
+# Railway_Ticket_system
 Welcome to the Railway Reservation/Ticketing System GitHub repository! This application provides users with the ability to book and manage railway tickets, while admins and ticketing officers can manage trips, bookings, and more.
 ## Overview
 
