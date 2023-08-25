@@ -63,7 +63,8 @@ The token_id is the primary key, and expires_at is used to manage token validity
 
 ### Screenshots
 ## User Login page
-<img width="906" alt="Screenshot 2023-08-20 at 11 24 52 PM" src="https://github.com/Eagle-Patriot/Railway_Ticket_system/assets/114234688/93541bbd-d579-43eb-ab29-d991486022fc">
+
+
 
 ## User Registration Page
 <img width="714" alt="Screenshot 2023-08-20 at 11 25 40 PM" src="https://github.com/Eagle-Patriot/Railway_Ticket_system/assets/114234688/bbed711a-0f60-4e5b-9dc5-980f8d307164">
