@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family:'Times New Roman', Times, serif;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)100%, rgba(0,0,0,0.5)100%), url(../images/TrainPic.jpg);
+}
+.child{
+    background-color: rgb(8, 8, 71);
+    display: block;
+    font-size: large;
+
+}
+nav{
+    padding: 2rem;
+    overflow: hidden;
+    display: block;
+}
+nav ul li{
+    float: left;
+    margin: 0 15px;
+    color: white;
+    display: block;
+}
+nav .btns{
+    float: right;
+}
+nav li{
+    list-style-type: none;
+
+}
+.btn{
+    border: none;
+    background-color: white;
+    color: rgb(24, 45, 90) ;
+    border-radius: 5px;
+    padding: .8rem;
+   font-size: medium;
+   margin-bottom: 20px;
+   margin: 5px 5px;
+
+}
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.register{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    background-color: rgb(8, 8, 71, 0.6);
+    color: white;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 5rem;
+    text-transform: uppercase;
+
+}
+form input{
+    padding: .4rem;
+}
+
+form select{
+    padding: .4rem;
+}
+.submit{
+    border: none;
+    padding: .4rem;
+    border-radius: 5px;
+    background-color: rgb(21, 30, 50);
+    color: white;
+}
+.submit:hover{
+    background-color: rgb(33, 32, 32);
+}
+.directions{
+    background-color: rgb(8, 8, 71, 0.6);
+    color: white;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    padding: 5rem;
+    text-transform: uppercase;
+    border-left: 3px solid white;
+}
+.icon{
+    border-radius: 50%;
+}
+ .caution{
+   display: flex;
+   margin: 7px 0;
+}
+.caution p{
+    margin: 0 10px;
+    margin-top: 6%;
+}
+
+@media screen and (max-width: 500px) {
+    body{
+        zoom: 0.2;
+    }
+}
+@media screen and (max-width: 960px) and (min-width: 501px) {
+    body{
+        zoom: 0.4;
+    }
+}
+@media screen and (max-width: 1030px) and (min-width: 961px) {
+    body{
+        zoom: 0.5;
+    }
+}
+@media screen and (max-width: 1330px) and (min-width: 1031px) {
+    body{
+        zoom: 0.6;
+    }
+}

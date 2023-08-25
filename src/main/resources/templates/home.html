@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+        xmlns:sec= "http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel home-page</title>
+  <link th:href="@{/css/travel.css}" rel="stylesheet">
+</head>
+<body>
+<div class="parent">
+  <section class="child">
+    <nav class="nav-area">
+      <ul>
+        <li th:href="@{/}">Home</li>
+        <li>FAQ</li>
+        <li>Terms &amp; Conditions</li>
+        <li>Privacy Policy</li>
+        <li>Dispatch &amp; Arrivals</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" th:href="@{/login}" sec:authorize="!isAuthenticated()" >Login</a>
+        <a class="btn" th:href="@{/register/register-form}" sec:authorize="!isAuthenticated()">Register</a>
+        <a class="btn" th:href="@{/logout}" sec:authorize="isAuthenticated()">Logout</a>
+        <a class="btn" th:href="@{/tripmate/admin/user}" sec:authorize="isAuthenticated()">Users</a>
+      </div>
+    </nav>
+  </section>
+
+  <div class="register">
+    <section class="card-component">
+
+      <div class="card">
+        <form action="">
+          <h4>please Select The Appropriate Information</h4>
+          <label for="departureStation"> from:</label>
+          <select name="departureStation" id="departureStation">
+            <option value="E">Select source station</option>
+            <option value="Lagos Railway Station">Lagos Railway Station</option>
+            <option value="Abuja Railway Station">Abuja Railway Station</option>
+            <option value="Port Harcourt Railway Station">Port Harcourt Railway Station</option>
+            <option value="Kano Railway Station">Kano Railway Station</option>
+            <option value="Ibadan Railway Station">Ibadan Railway Station</option>
+            <option value="Enugu Railway Station">Enugu Railway Station</option>
+            <option value="Kaduna Railway Station">Kaduna Railway Station</option>
+            <option value="Benin City Railway Station">Benin City Railway Station</option>
+            <option value="Abeokuta Railway Station">Abeokuta Railway Station</option>
+            <option value="Jos Railway Station">Jos Railway Station</option>
+            <option value="Warri Railway Station">Warri Railway Station</option>
+            <option value="Warri Railway Station">Warri Railway Station</option>
+          </select>
+          <label for="destinationStation">to:</label>
+          <select name="destinationStation" id="destinationStation">
+            <option value="E">Select destination station</option>
+            <option value="Lagos Railway Station">Lagos Railway Station</option>
+            <option value="Abuja Railway Station">Abuja Railway Station</option>
+            <option value="Port Harcourt Railway Station">Port Harcourt Railway Station</option>
+            <option value="Kano Railway Station">Kano Railway Station</option>
+            <option value="Ibadan Railway Station">Ibadan Railway Station</option>
+            <option value="Enugu Railway Station">Enugu Railway Station</option>
+            <option value="Kaduna Railway Station">Kaduna Railway Station</option>
+            <option value="Benin City Railway Station">Benin City Railway Station</option>
+            <option value="Abeokuta Railway Station">Abeokuta Railway Station</option>
+            <option value="Jos Railway Station">Jos Railway Station</option>
+            <option value="Warri Railway Station">Warri Railway Station</option>
+            <option value="Warri Railway Station">Warri Railway Station</option>
+          </select> <br><br><br>
+         <label for="dateOfTravel">date</label>
+          <input type="date" value="dateOfTravel"  id="dateOfTravel" name="dateOfTravel" min="2023-08-10" max="2023-08-31"> <br><br><br>
+          <div class="btns">
+            <a class="submit" th:onclick="@{/tripmate/admin/trips}">FIND TRAIN</a>
+          </div>
+<!--          <button class="submit" th:onclick="@{/tripmate/**/trips}">FIND TRAIN</button>-->
+        </form>
+
+        <div class="directions">
+          <h2>TRAVEL TIPs</h2>
+          <div class="signs">
+            <div class="caution">
+              <img src="" th:src="@{/images/headsup.jpg}" width="76px" height="76px" alt="" class="icon"> <p>Heads Up</p>
+
+
+              &nbsp; &nbsp;&nbsp;&nbsp; <img src="" th:src="@{/images/twice.png}" width="76px" height="76px" alt="" class="icon"> <p>Look twice</p> <br>
+            </div>
+            <div class="caution">
+              <img src="" th:src="@{/images/stand.png}" width="76px" height="76px" alt="" class="icon"><p>Stand back</p> <br>
+              <img src="" th:src="@{/images/listen.jpg}" width="76px" height="76px" alt="" class="icon"><p>pay attention to announcements.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+</body>
+</html>

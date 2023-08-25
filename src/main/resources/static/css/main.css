@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text color */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #007bff; /* Blue heading color */
+    text-align: center;
+    padding: 20px;
+}
+
+.trip-table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    border: 2px solid #007bff; /* Blue border for the table */
+    margin-top: 30px;
+}
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid #007bff; /* Blue border for table cells */
+    padding: 10px;
+    text-align: center;
+}
+
+.trip-table th {
+    background-color: #007bff; /* Blue header background */
+    color: #ffffff; /* White header text color */
+}

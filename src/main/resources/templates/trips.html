@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+          crossorigin="anonymous">
+</head>
+<body>
+<div class="container col-md-offset-3 col-md-8 mt-lg-5">
+    <div th:switch="${trips}">
+        <h2 th:case="null"> <p class="alert alert-warning">No trips available, Please select another date.</p></h2>
+        <div th:case="*">
+            <h2>Available trips</h2>
+            <div class="row">
+                <div class = "col-lg-3">
+                    <a th:href="@{/trip/book}" class="btn btn-primary btn-sm mb-3"></a>
+                </div>
+            </div>
+            <table class="table table-striped table-bordered">
+                <thead class="table-dark">
+                <tr>
+                    <th scope="col">Date of Travel</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Seat Type</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Departure Station</th>
+                    <th scope="col">Destination Station</th>
+                    <th ></th>
+
+                </tr></thead>
+                <tbody>
+                <tr th:each="trips: ${trips}">
+                    <td th:text="${trips.dateOfTravel}"></td>
+                    <td th:text="${trips.timeOfTravel}"></td>
+                    <td th:text="${trips.seatType}"></td>
+                    <td th:text="${trips.location}"></td>
+                    <td th:text="${trips.departureStation}"></td>
+                    <td th:text="${trips.destinationStation}"></td>
+                    <td> <a href="#">book</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <p><a href="#" th:href="@{/}">Go to Home page</a></p>
+    </div>
+</div>
+</body>
+</html>
