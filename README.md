@@ -35,7 +35,8 @@ Users can view trips, book tickets, and manage their bookings.
 Admins and ticketing officers can manage trips, view bookings, search for passenger information, and more.
 
 ## Entity Relationship Diagram (ERD)
-<img width="774" alt="Screenshot 2023-08-20 at 2 08 04 AM" src="https://github.com/Eagle-Patriot/Railway_Ticket_system/assets/114234688/9bfd54ac-3536-4057-95ef-6eb5c07436e9">
+<img width="1680" alt="Screenshot 2023-08-25 at 5 13 48 AM" src="https://github.com/Eagle-Patriot/Railway_Ticket_system/assets/114234688/3e2b036b-d331-48e5-85f3-3d8ab4ba28b7">
+
 
 ### Users Table
 The users table stores information about users, including their first name, last name, email, password, role, and account status.
